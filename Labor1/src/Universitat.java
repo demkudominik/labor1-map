@@ -42,6 +42,18 @@ public class Universitat {
 
     }
 
+    public ArrayList<Integer> roundedGrades(ArrayList<Integer> grades) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (Integer grade : grades)
+            result.add(round(grade));
+        return result;
+    }
 
-
+    public int maximalRoundedGrade(ArrayList<Integer> grades) {
+        int maximalRoundedGrade = 0;
+        for (Integer grade : grades)
+            if (round(grade) != grade && maximalRoundedGrade < round(grade))
+                maximalRoundedGrade = round(grade);
+        return maximalRoundedGrade;
+    }
 }
