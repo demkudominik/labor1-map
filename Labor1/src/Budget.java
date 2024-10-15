@@ -51,5 +51,20 @@ public class Budget {
         return getMaximum(filterPrices(usb.getPriceList()));
     }
 
+    public int totalSpent(Keyboard keyboard, USB usb) {
 
+        int finalPrice;
+        int maxFinalPrice = -1;
+
+        for ( int keyboardPrice: keyboard.getPriceList() ) {
+            for ( int usbPrice: usb.getPriceList() ) {
+                finalPrice = keyboardPrice + usbPrice;
+                if ( finalPrice <= budgetValue && maxFinalPrice < finalPrice ) {
+                    maxFinalPrice =  finalPrice;
+                }
+            }
+        }
+        return maxFinalPrice;
     }
+
+}
