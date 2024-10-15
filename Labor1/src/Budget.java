@@ -34,5 +34,22 @@ public class Budget {
         return result;
     }
 
+    public int get_budgetValue() {
+        return budgetValue;
+    }
 
-}
+    public int mostCheap(Keyboard keyboard) {
+        return getMinimum(keyboard.getPriceList());
+    }
+
+    public int mostExpensive(PcAccessory pcAccessory) {
+        return getMaximum(pcAccessory.getPriceList());
+    }
+
+
+    public int mostExpensiveAffordable(USB usb) {
+        return getMaximum(filterPrices(usb.getPriceList()));
+    }
+
+
+    }
