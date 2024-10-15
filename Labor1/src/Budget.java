@@ -23,4 +23,16 @@ public class Budget {
             return Collections.max(array); //not Emplty max value
         }
     }
+
+    private ArrayList<Integer> filterPrices(ArrayList<Integer> priceList) {
+        ArrayList<Integer> result = new ArrayList<>();
+
+        for (int price : priceList) {
+            if (price <= budgetValue)
+                result.add(price);
+        }
+        return result;
+    }
+
+
 }

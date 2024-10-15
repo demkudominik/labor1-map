@@ -11,4 +11,7 @@ public abstract class PcAccessory {
         }
     }
 
+    public ArrayList<Integer> getPriceList() { return priceList; }
+
+    public void addToPriceList(int price) { priceList.add(price); }
 }
