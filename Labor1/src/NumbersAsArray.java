@@ -31,4 +31,18 @@ public class NumbersAsArray {
     public int[] sutract(NumbersAsArray other){
         return numberToArray(Math.abs(arrayToNumber(digits) - arrayToNumber(other.get())));
     }
+
+    public int[] multiply(int number) {
+        return numberToArray(arrayToNumber(digits) * number);
+    }
+
+    public int[] divide(int number) {
+        if (number == 0) {
+            return new int[]{};
+        } else {
+            return numberToArray(arrayToNumber(digits) / number);
+        }
+    }
+
+
 }
