@@ -26,5 +26,9 @@ public class NumbersAsArray {
         return result;
     }
 
+    public int[] add(NumbersAsArray other){ return numberToArray(arrayToNumber(digits) + arrayToNumber(other.get())); }
 
+    public int[] sutract(NumbersAsArray other){
+        return numberToArray(Math.abs(arrayToNumber(digits) - arrayToNumber(other.get())));
+    }
 }
