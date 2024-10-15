@@ -56,4 +56,5 @@ public class Universitat {
                 maximalRoundedGrade = round(grade);
         return maximalRoundedGrade;
     }
+
 }
