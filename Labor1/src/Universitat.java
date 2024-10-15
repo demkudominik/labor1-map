@@ -28,9 +28,13 @@ public class Universitat {
         return result;
     }
 
+    public int sumOfArrayElements(ArrayList<Integer> array) {
+        int sum = 0;
+        for (Integer element: array)
+            sum += element;
+        return sum;
 
-
-
+    }
 
 
 }
