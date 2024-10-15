@@ -10,4 +10,12 @@ public class Numbers {
                 minimalNumber = number;
         return minimalNumber;
     }
+
+    public int maximumNumber(){
+        int maximumNumber = number[0];
+        for(Integer number: number)
+            if (maximumNumber < number)
+                maximumNumber = number;
+        return maximumNumber;
+    }
 }
