@@ -35,6 +35,13 @@ public class Universitat {
         return sum;
 
     }
+    public int avrageGrade(ArrayList<Integer> grades) {
+        if (grades.isEmpty()) {
+            return 0;
+        }return sumOfArrayElements(grades) / grades.size();
+
+    }
+
 
 
 }
