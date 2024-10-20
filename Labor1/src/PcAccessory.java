@@ -4,7 +4,7 @@ public abstract class PcAccessory {
 
     protected ArrayList<Integer> priceList = new ArrayList<>();
 
-    public PcAccessory(int... prices) {
+    public PcAccessory(ArrayList<Integer> prices) {
         for (int price : prices) {
             if (price >= 0)
                 priceList.add(price);

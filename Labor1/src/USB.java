@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class USB extends PcAccessory {
 
-    public USB(int... prices) {
-        super(prices);
+    public USB(ArrayList<Integer> priceList) {
+        super(priceList);
     }
 }
